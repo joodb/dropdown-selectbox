@@ -1,2 +1,2 @@
-# select-css
-select 내 맘대로 꾸미기
+# dropdown-selectbox
+FE 2기 과제 - selectbox
