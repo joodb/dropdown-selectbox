@@ -1,6 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root {
+    --select-box-color : #C4C4C4;
+    --select-focus-color : #9B51E0;
+    --select-outline-color : #F8E4FF;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+.select-wrap {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #FFFFFF;
+}
+
+.select-wrap label{
+    display: block;
+}
+
+.select-wrap .pLanguage-select {
+    width: 200px;
+    padding: 12px 12px 12px 13px;
+    border-radius: 10px;
+    border: 1px solid var(--select-box-color);
+    outline: none;
+    background: url(images/icon-Triangle-up.png) no-repeat;
+    background-position: 168px 8px;    
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.select-wrap .pLanguage-select:focus {
+    border: 1px solid var(--select-focus-color);
+    outline: 3px solid var(--select-outline-color);
+    
+}
+
+.select-wrap .pLanguage-select option:first-child {
+    display: none;
+}
