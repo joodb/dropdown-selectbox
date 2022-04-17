@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,34 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="selectbox.css">
 </head>
+
 <body>
-    <article class="select-wrap">
-        <select class="pLanguage-select" id="pLanguage" name="" >
-            <option value="">최애 프로그래밍 언어</option>
-            <option value="Python">Python</option>
-            <option value="Java">Java</option>
-            <option value="JavaScript">JavaScript</option>
-            <option value="C#">C#</option>
-            <option value="C/C++">C/C++</option>
-        </select>
+    <section class="select-wrap" data-role="selectbox">
+        <h2 class="hidden">select</h2>
+            <button type="button" class="toggle-btn" onclick="toggleBtn();">
+                최애 프로그래밍 언어
+                <img src="./images/icon-Triangle-down.svg" alt="" >
+            </button>
 
+            <ul class="selectbox-option hide">
+                <li>
+                    <data value="Python">Python</data>
+                </li>
+                <li>
+                    <data value="Java">Java</data>
+                </li>
+                <li>
+                    <data value="JavaScript">JavaScript</data>
+                </li>
+                <li>
+                    <data value="C#">C#</data>
+                </li>
+                <li>
+                    <data value="C/C++">C/C++</data>
+                </li>
+            </ul>
+        </section>
 
-    </article>
-
-
+        <script src="index.js"></script>
 </body>
 </html>
