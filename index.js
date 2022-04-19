@@ -17,9 +17,21 @@ function toggleBtn() {
 }
 
 
+/* 
+const selectBox = document.getElementById("selectBox");
+const optionBoxList = document.querySelectorAll("#optionBox li button");
+const dropDownBtn = document.getElementById("dropDownBtn");
+console.log(optionBoxList);
+dropDownBtn.addEventListener("click",(e)=>{
+    (e.target.classList.contains("click"))?
+        e.target.classList.remove("click"):
+        e.target.classList.add("click");
+});
 
-/* li가 선택되었을 때 
-    선택 창은 닫히고
-    내용은 선택한 문구로 바뀌어야한다    
-*/
-
+for (const item of optionBoxList) {
+    item.addEventListener("click",(e)=>{
+        selectBox.value=e.target.id;
+        dropDownBtn.classList.remove("click");
+        dropDownBtn.innerText=e.target.innerText;
+    });
+} */
