@@ -44,7 +44,7 @@ body {
     border-radius: 10px;
     border: 1px solid var(--select-box-color);
     outline: none;
-    background: url(images/icon-Triangle-down.png) no-repeat;
+    background: url('./src/images/icon-Triangle-down.png') no-repeat;
     background-position: 175px 14px;    
     font-size: 12px;
     font-weight: 400;
@@ -81,9 +81,7 @@ body {
     padding: 5px 7px;
 }
 
-
-
-.select-wrap .selectbox-option li  button {
+.select-wrap .selectbox-option .list-option {
     width: 184px;
     font-size: 14px;
     font-weight: 400;

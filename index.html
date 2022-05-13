@@ -5,36 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="selectbox.css">
+    <title>selectbox</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/selectbox.css">
 </head>
 
 <body>
     <section class="select-wrap" data-role="selectbox">
         <h2 class="hidden">select</h2>
-            <button type="button" class="toggle-btn" onclick="toggleBtn();">
+            <button type="button" class="toggle-btn">
                 최애 프로그래밍 언어
             </button>
-
             <ul class="selectbox-option hide">
-                <li>
-                    <button type="button">Python</button>
-                </li>
-                <li>
-                    <button type="button">Java</button>
-                </li>
-                <li>
-                    <button type="button">JavaScript</button>
-                </li>
-                <li>
-                    <button type="button">C#</button>
-                </li>
-                <li>
-                    <button type="button">C/C++</button>
-                </li>
+                <li><button type="button" class="list-option">Python</button></li>
+                <li><button type="button" class="list-option">Java</button></li>
+                <li><button type="button" class="list-option">JavaScript</button></li>
+                <li><button type="button" class="list-option">C#</button></li>
+                <li><button type="button" class="list-option">C/C++</button></li>
             </ul>
         </section>
-    <script src="index.js"></script>
+    <script src="./src/styles/index.js"></script>
 </body>
 </html>

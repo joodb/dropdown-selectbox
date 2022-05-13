@@ -1,20 +1,19 @@
 let state = "off";
 
-/* background-image 수정 필요 */
-function toggleBtn() {
-    const toggleBtn = document.querySelector(".hide");
-    const arrowIcon = document.querySelector(".toggle-btn");
-    
+const toggleBtn = document.querySelector(".hide");
+const arrowIcon = document.querySelector(".toggle-btn");
+
+arrowIcon.addEventListener('click', () => {
     if(state == "off"){
         toggleBtn.style.visibility = "inherit";
-        arrowIcon.style.background = "url(images/icon-Triangle-up)";  
+        arrowIcon.style.background = "url(./src/images/icon-Triangle-up)";  
         state = "on";
     } else if(state == "on"){
+        arrowIcon.style.background = "url(./src/images/icon-Triangle-up)";  
         toggleBtn.style.visibility = "hidden";
-        arrowIcon.style.background = "url(images/icon-Triangle-up)";  
         state = "off";
     }
-}
+})
 
 
 /* 
