@@ -1,36 +1,26 @@
-let state = "off";
-
-const toggleBtn = document.querySelector(".hide");
-const arrowIcon = document.querySelector(".toggle-btn");
-
-arrowIcon.addEventListener('click', () => {
-    if(state == "off"){
-        toggleBtn.style.visibility = "inherit";
-        arrowIcon.style.background = "url(./src/images/icon-Triangle-up)";  
-        state = "on";
-    } else if(state == "on"){
-        arrowIcon.style.background = "url(./src/images/icon-Triangle-up)";  
-        toggleBtn.style.visibility = "hidden";
-        state = "off";
+const selectBtn = document.querySelector('.select-btn');
+const contentsOption = document.querySelector('.contents-option')
+const options = document.querySelectorAll('.list-option');
+/* select option 보여주기 */
+selectBtn.addEventListener('click', () => {
+    if( contentsOption.classList.contains('hide')) { // hide가 있다면 (기본)
+        contentsOption.classList.remove('hide');
+        document.documentElement.style.setProperty('--toggle-degree', '-180deg');
+    } else {
+        contentsOption.classList.add('hide');
+        document.documentElement.style.setProperty('--toggle-degree', '0deg');
     }
-})
-
-
-/* 
-const selectBox = document.getElementById("selectBox");
-const optionBoxList = document.querySelectorAll("#optionBox li button");
-const dropDownBtn = document.getElementById("dropDownBtn");
-console.log(optionBoxList);
-dropDownBtn.addEventListener("click",(e)=>{
-    (e.target.classList.contains("click"))?
-        e.target.classList.remove("click"):
-        e.target.classList.add("click");
 });
 
-for (const item of optionBoxList) {
-    item.addEventListener("click",(e)=>{
-        selectBox.value=e.target.id;
-        dropDownBtn.classList.remove("click");
-        dropDownBtn.innerText=e.target.innerText;
+/* list 선택 */
+for (const i of options) {
+    i.addEventListener("click",(e)=>{
+        selectBtn.textContent = e.target.textContent;
+        contentsOption.classList.add("hide");
+        document.documentElement.style.setProperty('--toggle-degree', '0deg');
+        document.getElementById('hiddenSelectOption').value = e.target.value;
     });
-} */
+}
+
+
+
