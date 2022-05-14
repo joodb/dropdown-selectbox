@@ -57,6 +57,11 @@ body {
     transform: rotate(var(--toggle-degree));
 }
 
+.select-wrap .select-btn:focus {
+    border: 1px solid var(--select-focus-color);
+    outline: 3px solid var(--select-outline-color);
+}
+
 .contents-option {
     margin: 9px 0 0 0;
     padding: 3px 0;
@@ -90,16 +95,7 @@ body {
 
 
 /* js */
-.show{
-    display: block;
-}
-
 .hide {
     visibility: hidden;
     
-}
-/* .selectbox-focus */ 
-.select-wrap .select-btn:focus {
-    border: 1px solid var(--select-focus-color);
-    outline: 3px solid var(--select-outline-color);
 }
