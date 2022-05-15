@@ -96,6 +96,6 @@ body {
 
 /* js */
 .hide {
-    visibility: hidden;
+    display: none;
     
 }
