@@ -28,10 +28,8 @@ body {
 }
 
 .select-wrap {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    width: 200px;
+    margin: 20vh auto;
     background: var(--background-color);
 }
 
@@ -97,5 +95,4 @@ body {
 /* js */
 .hide {
     display: none;
-    
 }
